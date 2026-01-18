@@ -1,0 +1,14 @@
+services:
+  ubuntu:
+    build:
+      context: .
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/usb1
+      - /dev/usb1p1
+    network_mode: "none"
+    security_opt:
+      - seccomp=unconfined
+    stdin_open: true
+    tty: true
