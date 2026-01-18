@@ -1,6 +1,10 @@
+A container solution to creating NTFS filesystems, having only a Linux host and Docker runtime/compose.
+
+In this example a device provided by the OS (Synology DSM) at `/dev/usb1` is used.
+
 ## Review settings
 
-In compose, specify /dev/sda and /dev/sda1 as devices to share from the host
+In compose, specify /dev/usb1 and /dev/usb1p1 as devices to share from the host
 
 ## Boot container
 ```
